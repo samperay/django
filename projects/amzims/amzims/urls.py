@@ -20,6 +20,6 @@ from inventorymgmt import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.home, name='home',),
+    url(r'^$', views.default, name='default',),
     url(r'^inventorymgmt/(\d+)/', views.inventory_detail, name='inventory_detail'),
 ]
