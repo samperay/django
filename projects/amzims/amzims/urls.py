@@ -20,5 +20,5 @@ from inventorymgmt import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.default, name='default',),
-    url(r'^inventory/', views.inventory, name = 'inventory',),
+    url(r'^inventory/',include('inventorymgmt.urls')),
 ]
